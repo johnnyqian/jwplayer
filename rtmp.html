@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>RTMP - JWPlayer</title>
+	<script type='text/javascript' src='jwplayer.js'></script>
+</head>
+<body>
+	<h1>RTMP- JWPlayer</h1>
+	
+	<div id='mediaspace'>This text will be replaced</div>
+	<script type='text/javascript'>
+	  jwplayer('mediaspace').setup({
+		'flashplayer': 'player.swf',
+		'file': 'home',
+		'streamer': 'rtmp://54.222.180.32/live',
+		'controlbar': 'bottom',
+		'width': '640',
+		'height': '360'
+	  });
+	</script>
+</body>
+</html>
